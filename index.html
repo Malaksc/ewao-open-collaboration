@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EWAO Open Collaboration</title>
+<meta name="description" content="Capacidades globales para necesidades definidas desde el territorio. Colabora a distancia con necesidades definidas por la Asociación Keweriono.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+</head>
+<body>
+<a class="skip" href="#oportunidades">Saltar a oportunidades</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#inicio" aria-label="EWAO Open Collaboration, inicio">
+      <img src="assets/img/logo-ewao.png" alt="EWAO Project by Waodani" width="150" height="40">
+      <span class="brand-tag">Open Collaboration</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#como" data-i18n="nav.como">Cómo funciona</a>
+      <a href="#oportunidades" data-i18n="nav.oportunidades">Oportunidades</a>
+      <a href="#condiciones" data-i18n="nav.condiciones">Condiciones</a>
+      <a class="nav-cta" href="#postular" data-i18n="nav.postular" data-track="nav_postular">Postular</a>
+    </nav>
+    <button class="lang" id="lang" type="button" aria-label="Cambiar idioma / Change language">EN</button>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <img class="hero-img" src="assets/img/hero-rio.jpg" alt="Vista aérea de un río amazónico que serpentea entre el bosque del territorio Keweriono" fetchpriority="high">
+    <div class="wrap hero-in">
+      <h1 data-i18n="hero.title">Capacidades globales para necesidades definidas desde el territorio</h1>
+      <p class="hero-lead" data-i18n="hero.lead">La Asociación Keweriono decide qué necesita. EWAO lo convierte en una tarea clara. Tú aportas tu capacidad a distancia, y el resultado vuelve al territorio.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="#oportunidades" data-i18n="hero.cta1" data-track="hero_oportunidades">Ver oportunidades</a>
+        <a class="btn btn-line" href="#postular" data-i18n="hero.cta2" data-track="hero_universidad" data-perfil="coord">Traer un curso universitario</a>
+      </div>
+      <p class="hero-fact" data-i18n="hero.fact">9 de las 16 comunidades del Modelo EWAO ya están conectadas con Starlink y energía solar.</p>
+    </div>
+  </section>
+
+  <section class="gob" id="como">
+    <div class="wrap gob-grid">
+      <div>
+        <h2 data-i18n="gob.title">Antes de que exista una oportunidad, alguien del territorio la decidió</h2>
+        <p class="lead" data-i18n="gob.lead">Ninguna necesidad se publica sin pasar por el nivel de decisión que le corresponde.</p>
+        <ol class="tiers">
+          <li class="tier t1"><strong data-i18n="gob.asamblea.t">Asamblea de Keweriono</strong><span data-i18n="gob.asamblea.d">Máxima autoridad. Define los grandes mandatos.</span></li>
+          <li class="tier t2"><strong data-i18n="gob.dirigencia.t">Dirigencia</strong><span data-i18n="gob.dirigencia.d">Prioriza, decide lo operativo y define qué vuelve a Asamblea.</span></li>
+          <li class="tier t3"><strong data-i18n="gob.ewao.t">Equipo técnico EWAO</strong><span data-i18n="gob.ewao.d">Estructura la necesidad, conecta capacidades y ejecuta dentro del mandato.</span></li>
+        </ol>
+        <p class="note"><span data-i18n="gob.buzon">Cualquier persona de las comunidades puede proponer una necesidad, incluso de forma anónima, desde el buzón del punto de conexión de su comunidad.</span> <a href="buzon/?c=demo&utm_source=landing&utm_medium=link&utm_campaign=buzon" data-i18n="foot.buzon" data-track="ver_buzon">Buzón comunitario</a></p>
+      </div>
+      <figure class="gob-photo">
+        <img src="assets/img/asamblea.jpg" alt="Comunidad reunida frente a una casa comunal en el territorio Keweriono" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="ciclo">
+    <div class="wrap">
+      <h2 data-i18n="ciclo.title">Ninguna colaboración se cierra hasta que el resultado vuelve al territorio</h2>
+      <div class="river" id="river">
+        <svg class="river-svg" viewBox="0 0 1200 420" aria-hidden="true" preserveAspectRatio="none">
+          <path class="river-bank" d="M120 90 C220 40 320 140 420 90 S620 40 720 90 S920 140 1020 90 C1170 90 1170 300 1020 300 C920 350 820 250 720 300 S520 350 420 300 S220 250 120 300 C-30 300 -30 90 120 90"/>
+          <path class="river-path" id="riverPath" d="M120 90 C220 40 320 140 420 90 S620 40 720 90 S920 140 1020 90 C1170 90 1170 300 1020 300 C920 350 820 250 720 300 S520 350 420 300 S220 250 120 300 C-30 300 -30 90 120 90"/>
+        </svg>
+        <ol class="steps">
+          <li style="--x:10%;--y:21.4%"><b>1</b><strong data-i18n="ciclo.s1">Necesidad</strong><span data-i18n="ciclo.d1">Llega por el buzón o la dirigencia</span></li>
+          <li style="--x:35%;--y:21.4%"><b>2</b><strong data-i18n="ciclo.s2">Decisión</strong><span data-i18n="ciclo.d2">Se valida en su nivel y se clasifica</span></li>
+          <li style="--x:60%;--y:21.4%"><b>3</b><strong data-i18n="ciclo.s3">Ficha</strong><span data-i18n="ciclo.d3">EWAO define problema, alcance y entregable</span></li>
+          <li style="--x:85%;--y:21.4%"><b>4</b><strong data-i18n="ciclo.s4">Matching</strong><span data-i18n="ciclo.d4">Puntaje automático y revisión humana</span></li>
+          <li style="--x:85%;--y:71.4%"><b>5</b><strong data-i18n="ciclo.s5">Colaboración</strong><span data-i18n="ciclo.d5">Remota, con el acceso que corresponde</span></li>
+          <li style="--x:60%;--y:71.4%"><b>6</b><strong data-i18n="ciclo.s6">Entrega</strong><span data-i18n="ciclo.d6">Archivos editables y documentos fuente</span></li>
+          <li class="key" style="--x:35%;--y:71.4%"><b>7</b><strong data-i18n="ciclo.s7">Devolución</strong><span data-i18n="ciclo.d7">Checklist completo y necesidad resuelta</span></li>
+          <li style="--x:10%;--y:71.4%"><b>8</b><strong data-i18n="ciclo.s8">Archivo vivo</strong><span data-i18n="ciclo.d8">Queda guardado y crece la capacidad local</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="ops" id="oportunidades">
+    <div class="wrap">
+      <div class="ops-head">
+        <div>
+          <h2 data-i18n="op.title">Oportunidades abiertas</h2>
+          <p class="lead" data-i18n="op.lead">Fichas piloto en las áreas que EWAO priorizó para empezar.</p>
+        </div>
+      </div>
+      <div class="filters" role="group" aria-labelledby="filtroLbl">
+        <span id="filtroLbl" class="filters-lbl" data-i18n="op.filtro">Filtrar por capacidad</span>
+        <div class="chips" id="chips"></div>
+      </div>
+      <ul class="fichas" id="fichas"></ul>
+      <p class="empty" id="empty" hidden data-i18n="op.vacio">No hay fichas con esa capacidad.</p>
+    </div>
+  </section>
+
+  <section class="perfiles">
+    <div class="wrap">
+      <h2 data-i18n="perfil.title">Para quién es</h2>
+      <div class="perfil-grid">
+        <article class="perfil">
+          <img src="assets/img/colaboracion.jpg" alt="Personas trabajando juntas sobre documentos en una mesa en territorio" loading="lazy">
+          <h3 data-i18n="perfil.uni.t">Universidades y docentes</h3>
+          <p data-i18n="perfil.uni.d">Trae un curso o un grupo de tesistas a un caso real.</p>
+        </article>
+        <article class="perfil">
+          <img src="assets/img/rio-curva.jpg" alt="Curva de un río amazónico vista desde el aire" loading="lazy">
+          <h3 data-i18n="perfil.pro.t">Profesionales y exvoluntarios</h3>
+          <p data-i18n="perfil.pro.d">Aplica tu experiencia a una necesidad concreta.</p>
+        </article>
+        <aside class="recibes">
+          <h3 data-i18n="perfil.recibes">Lo que recibes</h3>
+          <ul>
+            <li data-i18n="perfil.r1">Un caso real definido por la comunidad</li>
+            <li data-i18n="perfil.r2">Certificado de contribución verificable</li>
+            <li data-i18n="perfil.r3">Saber qué pasó con tu trabajo</li>
+            <li data-i18n="perfil.r4">Nuevas oportunidades según tu perfil</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cond" id="condiciones">
+    <div class="wrap cond-grid">
+      <div>
+        <h2 data-i18n="cond.title">Condiciones para colaborar</h2>
+        <p class="lead" data-i18n="cond.lead">Se aceptan antes de empezar y cambian según el nivel de información de cada ficha.</p>
+        <h3 class="sub" data-i18n="cond.niveles">Cinco niveles de información</h3>
+        <dl class="niveles">
+          <div class="lv open"><dt data-lv="publica">Pública</dt><dd data-i18n="cond.n.publica">Puede ir en la ficha.</dd></div>
+          <div class="lv mid"><dt data-lv="interna">Interna</dt><dd data-i18n="cond.n.interna">Solo un resumen aprobado.</dd></div>
+          <div class="lv closed"><dt data-lv="confidencial">Confidencial</dt><dd data-i18n="cond.n.confidencial">Solo para la persona asignada.</dd></div>
+          <div class="lv closed"><dt data-lv="protegida">Cultural / territorial protegida</dt><dd data-i18n="cond.n.protegida">Nunca sin consentimiento previo, libre e informado.</dd></div>
+          <div class="lv mid"><dt data-lv="especifico">Acceso específico</dt><dd data-i18n="cond.n.especifico">Solo para quien aceptó las condiciones de ese nivel.</dd></div>
+        </dl>
+      </div>
+      <div class="compromisos">
+        <div class="comp"><h3 data-i18n="cond.c1.t">El resultado es de Keweriono</h3><p data-i18n="cond.c1.d"></p></div>
+        <div class="comp"><h3 data-i18n="cond.c2.t">Beneficio comunitario</h3><p data-i18n="cond.c2.d"></p></div>
+        <div class="comp"><h3 data-i18n="cond.c3.t">Sin contacto con pueblos en aislamiento</h3><p data-i18n="cond.c3.d"></p></div>
+        <div class="comp"><h3 data-i18n="cond.c4.t">Solo lo demostrable</h3><p data-i18n="cond.c4.d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dev">
+    <img class="dev-img" src="assets/img/territorio.jpg" alt="Bosque y río del territorio al atardecer, vista aérea" loading="lazy">
+    <div class="wrap dev-in">
+      <div class="dev-card">
+        <h2 data-i18n="dev.title">Qué pasa con tu trabajo</h2>
+        <p data-i18n="dev.lead">Una colaboración se cierra solo cuando el resultado vuelve en un formato que la comunidad puede usar.</p>
+        <ul class="check">
+          <li data-i18n="dev.c1"></li><li data-i18n="dev.c2"></li><li data-i18n="dev.c3"></li>
+          <li data-i18n="dev.c4"></li><li data-i18n="dev.c5"></li><li data-i18n="dev.c6"></li>
+        </ul>
+        <p class="dev-after" data-i18n="dev.after"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply" id="postular">
+    <div class="wrap apply-grid">
+      <div class="apply-intro">
+        <h2 data-i18n="form.title">Postula a una oportunidad</h2>
+        <p class="lead" data-i18n="form.lead">Toma unos 4 minutos.</p>
+      </div>
+      <form id="form" class="form" novalidate>
+        <div class="field full">
+          <label for="f_ficha" data-i18n="form.ficha">Ficha a la que postulas</label>
+          <select id="f_ficha" name="oc_ficha"></select>
+        </div>
+        <div class="field full">
+          <label for="f_perfil" data-i18n="form.perfil">Tu perfil</label>
+          <select id="f_perfil" name="oc_perfil" required>
+            <option value="coordinador_academico" data-i18n="form.perfil.coord">Coordino un curso o programa universitario</option>
+            <option value="estudiante" data-i18n="form.perfil.est">Estudiante avanzado/a o tesista</option>
+            <option value="profesional" data-i18n="form.perfil.pro">Profesional especialista</option>
+            <option value="exvoluntario" data-i18n="form.perfil.exvol">Exvoluntario/a de EWAO</option>
+            <option value="investigador" data-i18n="form.perfil.inv">Investigador/a</option>
+          </select>
+        </div>
+        <div class="field"><label for="f_nombre" data-i18n="form.nombre">Nombre</label><input id="f_nombre" name="firstname" autocomplete="given-name" required></div>
+        <div class="field"><label for="f_apellido" data-i18n="form.apellido">Apellido</label><input id="f_apellido" name="lastname" autocomplete="family-name" required></div>
+        <div class="field"><label for="f_email" data-i18n="form.email">Correo</label><input id="f_email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f_pais" data-i18n="form.pais">País</label><input id="f_pais" name="country" autocomplete="country-name" required></div>
+        <div class="field full"><label for="f_org" data-i18n="form.org">Universidad u organización</label><input id="f_org" name="company" autocomplete="organization"></div>
+        <fieldset class="field full">
+          <legend data-i18n="form.capacidades">Tus capacidades</legend>
+          <div class="checks" id="f_caps"></div>
+        </fieldset>
+        <fieldset class="field full">
+          <legend data-i18n="form.idiomas">Idiomas en que puedes trabajar</legend>
+          <div class="checks">
+            <label class="ck"><input type="checkbox" name="idioma" value="es"> Español</label>
+            <label class="ck"><input type="checkbox" name="idioma" value="en"> English</label>
+            <label class="ck"><input type="checkbox" name="idioma" value="pt"> Português</label>
+            <label class="ck"><input type="checkbox" name="idioma" value="wao"> Wao Tededo</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f_horas" data-i18n="form.horas">Horas por semana disponibles</label><input id="f_horas" name="oc_horas_semana" type="number" min="1" max="40" inputmode="numeric" required></div>
+        <div class="field"><label for="f_exp" data-i18n="form.exp">Años de experiencia en tu área</label>
+          <select id="f_exp" name="oc_experiencia_anios"><option value="0">0</option><option value="1">1–2</option><option value="3">3–5</option><option value="6">6+</option></select></div>
+        <label class="ck full" id="supWrap"><input type="checkbox" id="f_sup" name="oc_supervision_academica"> <span data-i18n="form.supervision">Cuento con supervisión académica</span></label>
+        <div class="field full"><label for="f_port" data-i18n="form.portafolio">Link a trabajos previos</label><input id="f_port" name="oc_portafolio" type="url" placeholder="https://"></div>
+        <div class="field full"><label for="f_mot" data-i18n="form.motivacion">¿Por qué esta colaboración y qué aportarías?</label><textarea id="f_mot" name="oc_motivacion" rows="4" required data-i18n-ph="form.motivacion.ph"></textarea></div>
+        <label class="ck full legal"><input type="checkbox" id="f_cond" required> <span data-i18n="form.cond">Acepto las condiciones para colaborar.</span></label>
+        <label class="ck full legal"><input type="checkbox" id="f_cons1" required> <span data-i18n="form.cons1">Autorizo a EWAO a usar mis datos para gestionar esta postulación.</span></label>
+        <label class="ck full legal"><input type="checkbox" id="f_cons2"> <span data-i18n="form.cons2">Quiero recibir nuevas oportunidades y noticias de EWAO.</span></label>
+        <p class="form-err full" id="formErr" role="alert" hidden></p>
+        <button class="btn btn-solid full" type="submit" id="submitBtn" data-i18n="form.enviar">Enviar postulación</button>
+      </form>
+      <div class="ok" id="ok" hidden tabindex="-1">
+        <h3 data-i18n="form.ok.t">Postulación enviada</h3>
+        <p data-i18n="form.ok.d"></p>
+        <p id="okInv" hidden data-i18n="form.ok.inv"></p>
+        <button class="btn btn-line-dark" type="button" id="otra" data-i18n="form.otra">Postular a otra ficha</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p class="foot-lema" data-i18n="foot.lema">Keweriono define el rumbo. EWAO convierte ese rumbo en capacidad de ejecución.</p>
+    <p class="foot-links"><a href="buzon/?c=demo" data-i18n="foot.buzon">Buzón comunitario</a><a href="https://ewaoproject.com" rel="noopener" data-i18n="foot.sitio">Sitio de EWAO</a></p>
+    <p class="foot-small" data-i18n="foot.grupo"></p>
+  </div>
+</footer>
+
+<dialog class="modal" id="modal" aria-labelledby="mTitle">
+  <div class="modal-in" id="modalBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

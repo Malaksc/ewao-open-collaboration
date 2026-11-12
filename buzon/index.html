@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buzón comunitario Keweriono</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="buzon.css">
+<script src="../config.js"></script>
+</head>
+<body>
+<header class="bz-top">
+  <img src="../assets/img/logo-ewao.png" alt="EWAO Project by Waodani" width="120" height="32">
+  <p class="bz-place">Punto de conexión: <strong id="comunidad">Comunidad</strong></p>
+</header>
+
+<main class="bz">
+  <h1>Buzón de la comunidad</h1>
+  <p class="bz-lead">Cuenta un problema, una necesidad o una idea. Puedes hacerlo sin decir tu nombre.</p>
+
+  <form id="bz" novalidate>
+    <fieldset>
+      <legend><span class="n">1</span>¿Qué quieres contar?</legend>
+      <div class="big3">
+        <label class="tile"><input type="radio" name="tipo" value="problema" required>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 44 40H4Z"/><path d="M24 19v10M24 34v1"/></svg><span>Un problema</span></label>
+        <label class="tile"><input type="radio" name="tipo" value="necesidad">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26c6-1 9 3 14 3h6a3 3 0 0 0 0-6h-7"/><path d="M8 38h20l14-9a3 3 0 0 0-3-5l-9 5"/><path d="M4 24v16"/></svg><span>Una necesidad</span></label>
+        <label class="tile"><input type="radio" name="tipo" value="idea">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M17 30a12 12 0 1 1 14 0c-2 1.5-3 3-3 5H20c0-2-1-3.5-3-5Z"/><path d="M20 40h8M21 44h6"/></svg><span>Una idea</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n">2</span>¿Sobre qué tema?</legend>
+      <div class="grid-tema">
+        <label class="tile sm"><input type="radio" name="tema" value="agua" required><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c8 11 13 18 13 25a13 13 0 0 1-26 0c0-7 5-14 13-25Z"/></svg><span>Agua</span></label>
+        <label class="tile sm"><input type="radio" name="tema" value="salud"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M19 8h10v11h11v10H29v11H19V29H8V19h11Z"/></svg><span>Salud</span></label>
+        <label class="tile sm"><input type="radio" name="tema" value="educacion"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 12h14a4 4 0 0 1 4 4v24a4 4 0 0 0-4-4H6Z"/><path d="M42 12H28a4 4 0 0 0-4 4v24a4 4 0 0 1 4-4h14Z"/></svg><span>Educación</span></label>
+        <label class="tile sm"><input type="radio" name="tema" value="territorio"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 10 24h8L8 36h32L30 24h8Z"/><path d="M24 36v8"/></svg><span>Territorio y bosque</span></label>
+        <label class="tile sm"><input type="radio" name="tema" value="trabajo"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="16" width="36" height="24" rx="3"/><path d="M18 16v-5h12v5M6 27h36"/></svg><span>Trabajo e ingresos</span></label>
+        <label class="tile sm"><input type="radio" name="tema" value="comunicacion"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 10h36v22H20l-9 8v-8H6Z"/></svg><span>Comunicación</span></label>
+        <label class="tile sm"><input type="radio" name="tema" value="otro"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="12" cy="24" r="3"/><circle cx="24" cy="24" r="3"/><circle cx="36" cy="24" r="3"/></svg><span>Otro tema</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n">3</span>Cuéntalo como prefieras</legend>
+      <a class="voice" id="voice" href="#" hidden>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="17" y="4" width="14" height="24" rx="7"/><path d="M10 22a14 14 0 0 0 28 0M24 36v8M16 44h16"/></svg>
+        <span><strong>Enviar nota de voz</strong>Se abre WhatsApp. Puedes hablar en Wao Tededo o en español.</span>
+      </a>
+      <label class="lbl" for="msg">O escríbelo aquí (opcional)</label>
+      <textarea id="msg" rows="4" maxlength="1500"></textarea>
+    </fieldset>
+
+    <fieldset class="anon">
+      <label class="switch"><input type="checkbox" id="anon" checked><span>Enviar sin mi nombre</span></label>
+      <div id="nameWrap" hidden>
+        <label class="lbl" for="nombre">Tu nombre</label>
+        <input id="nombre" autocomplete="name">
+      </div>
+    </fieldset>
+
+    <p class="bz-err" id="err" role="alert" hidden>Elige qué quieres contar y el tema para poder enviarlo.</p>
+    <button class="send" type="submit" id="send">Enviar al buzón</button>
+    <p class="bz-small">Tu mensaje llega a la dirigencia y al equipo técnico de EWAO. Registrarlo no significa que ya esté aprobado: se revisa según el nivel de decisión que corresponda y el resultado se informa a la comunidad.</p>
+  </form>
+
+  <section class="done" id="done" hidden tabindex="-1">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20"/><path d="M15 25l6 6 12-13"/></svg>
+    <h2>Mensaje recibido</h2>
+    <p>Gracias. La dirigencia y el equipo técnico de EWAO lo van a revisar. Verás el avance en el informe de tu comunidad.</p>
+    <button class="send ghost" type="button" id="again">Enviar otro mensaje</button>
+  </section>
+</main>
+<script src="buzon.js"></script>
+</body>
+</html>
