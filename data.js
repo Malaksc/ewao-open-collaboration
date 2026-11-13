@@ -131,7 +131,8 @@ window.OC_FICHAS = [
 window.OC_TEXT = {
   es: {
     "nav.como": "Cómo funciona", "nav.oportunidades": "Oportunidades", "nav.condiciones": "Condiciones", "nav.postular": "Postular",
-    "hero.title": "Capacidades globales para necesidades definidas desde el territorio",
+    "hero.proto": "Prototipo académico, no oficial",
+    "hero.title": "Necesidades del territorio, capacidades del mundo",
     "hero.lead": "La Asociación Keweriono decide qué necesita. EWAO lo convierte en una tarea clara. Tú aportas tu capacidad a distancia, y el resultado vuelve al territorio.",
     "hero.cta1": "Ver oportunidades", "hero.cta2": "Traer un curso universitario",
     "hero.fact": "9 de las 16 comunidades del Modelo EWAO ya están conectadas con Starlink y energía solar.",
@@ -198,11 +199,13 @@ window.OC_TEXT = {
     "form.ok.inv": "Como esta ficha sigue la ruta especial de investigación, antes de empezar te enviaremos los acuerdos de consentimiento, confidencialidad y beneficio comunitario.",
     "form.otra": "Postular a otra ficha",
     "foot.lema": "Keweriono define el rumbo. EWAO convierte ese rumbo en capacidad de ejecución.",
-    "foot.buzon": "Buzón comunitario", "foot.sitio": "Sitio de EWAO", "foot.grupo": "Prototipo desarrollado por el Grupo 6, Estrategia de Internacionalización y Marketing Global, Universidad del Desarrollo, para EWAO y la Asociación Keweriono."
+    "foot.buzon": "Buzón comunitario", "foot.sitio": "Sitio de EWAO", "foot.fotos": "Fotografías: EWAO Project (ewaoproject.com). Las fichas de esta página son ejemplos piloto.",
+    "foot.grupo": "Prototipo académico, no oficial, desarrollado por el Grupo 6, Estrategia de Internacionalización y Marketing Global, Universidad del Desarrollo, para EWAO y la Asociación Keweriono."
   },
   en: {
     "nav.como": "How it works", "nav.oportunidades": "Opportunities", "nav.condiciones": "Terms", "nav.postular": "Apply",
-    "hero.title": "Global skills for needs defined in the territory",
+    "hero.proto": "Academic prototype, not official",
+    "hero.title": "Needs from the territory, skills from the world",
     "hero.lead": "The Keweriono Association decides what it needs. EWAO turns it into a clear task. You contribute your skills remotely, and the result goes back to the territory.",
     "hero.cta1": "See opportunities", "hero.cta2": "Bring a university course",
     "hero.fact": "9 of the 16 communities in the EWAO Model are already connected with Starlink and solar power.",
@@ -269,6 +272,7 @@ window.OC_TEXT = {
     "form.ok.inv": "Because this brief follows the special research route, before you start we will send you the consent, confidentiality and community-benefit agreements.",
     "form.otra": "Apply to another brief",
     "foot.lema": "Keweriono sets the direction. EWAO turns that direction into the capacity to deliver.",
-    "foot.buzon": "Community mailbox", "foot.sitio": "EWAO website", "foot.grupo": "Prototype built by Group 6, International Strategy and Global Marketing, Universidad del Desarrollo, for EWAO and the Keweriono Association."
+    "foot.buzon": "Community mailbox", "foot.sitio": "EWAO website", "foot.fotos": "Photos: EWAO Project (ewaoproject.com). The listings on this page are pilot examples.",
+    "foot.grupo": "Academic prototype, not official, built by Group 6, International Strategy and Global Marketing, Universidad del Desarrollo, for EWAO and the Keweriono Association."
   }
 };
