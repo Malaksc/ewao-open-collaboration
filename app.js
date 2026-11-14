@@ -168,7 +168,9 @@
     s += d.mot.length >= 150 ? 10 : (d.mot.length >= 60 ? 5 : 0);
     return Math.min(100, s);
   }
-  function nivel(s) { return s >= 60 ? "Calificado" : (s >= 40 ? "Revisar" : "No calificado"); }
+  // Sin la capacidad que pide la ficha no se puede quedar Calificado: como máximo, Revisar.
+  function tieneCapacidad(d, f) { return f ? f.capacidades.some(function (c) { return d.caps.indexOf(c) > -1; }) : d.caps.length > 0; }
+  function nivel(s, cap) { return (s >= 60 && cap) ? "Calificado" : (s >= 40 ? "Revisar" : "No calificado"); }
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -191,7 +193,7 @@
       sup: document.getElementById("f_sup").checked,
       port: document.getElementById("f_port").value.trim(), mot: document.getElementById("f_mot").value.trim()
     };
-    var sc = score(d, f), nv = nivel(sc);
+    var sc = score(d, f), nv = nivel(sc, tieneCapacidad(d, f));
     var fields = {
       firstname: document.getElementById("f_nombre").value.trim(), lastname: document.getElementById("f_apellido").value.trim(),
       email: document.getElementById("f_email").value.trim(), country: document.getElementById("f_pais").value.trim(),
