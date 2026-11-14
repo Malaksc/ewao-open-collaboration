@@ -9,7 +9,7 @@ Open Collaboration convierte una necesidad definida en Keweriono en una colabora
 | Archivo | Función |
 | --- | --- |
 | `index.html` | Landing pública ES/EN: gobernanza, ciclo de 8 pasos, catálogo de fichas piloto, condiciones, devolución y formulario de postulación |
-| `buzon/` | Buzón comunitario para el código QR del punto de conexión de cada comunidad (`buzon/?c=nombre-comunidad`), con opción anónima y nota de voz por WhatsApp |
+| `buzon/` | Buzón comunitario para el código QR del punto de conexión de cada comunidad (`buzon/?c=nombre-comunidad`), con opción anónima; la nota de voz por WhatsApp se activa al definir el número en `config.js` |
 | `data.js` | Fichas piloto, capacidades, niveles de información y textos ES/EN |
 | `app.js` | Filtros, fichas, *scoring* necesidad ↔ capacidad, envío a HubSpot y eventos de analítica |
 | `config.js` | IDs de HubSpot, Google Tag Manager y número de WhatsApp del buzón |
@@ -25,7 +25,7 @@ Open Collaboration convierte una necesidad definida en Keweriono en una colabora
 | Link a trabajos previos | 10 |
 | Motivación desarrollada | 10 (breve: 5) |
 
-60 o más = Calificado; 40 a 59 = Revisar; menos de 40 = No calificado. El puntaje ordena la revisión humana; no decide.
+60 o más = Calificado, siempre que coincida al menos una capacidad de la ficha (sin esa coincidencia, como máximo Revisar); 40 a 59 = Revisar; menos de 40 = No calificado. El puntaje ordena la revisión humana; no decide.
 
 ## Fotografías
 
